@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quiz is expected to match the snapshot 1`] = `
+<div
+  className="mainQuiz"
+>
+  <header>
+    <img
+      alt="Logo quiz Marvel"
+      className="logoQuiz"
+      src="marvelLogo.jpg"
+    />
+    <h1>
+      Quiz
+    </h1>
+    <p>
+      Sua pontuação é:
+    </p>
+    <p>
+      0
+    </p>
+    <section>
+      <img
+        alt="Foto THOR"
+        src="thorImage.png"
+      />
+    </section>
+    <form>
+      <div>
+        <input
+          placeholder="Digite sua resposta"
+          type="text"
+        />
+      </div>
+      <div>
+        <input
+          id="answerButton"
+          type="submit"
+          value="Responder"
+        />
+      </div>
+      <div
+        id="helpButtons"
+      >
+        <input
+          type="submit"
+          value="Mostrar resposta"
+        />
+        <input
+          type="submit"
+          value="Dica"
+        />
+      </div>
+    </form>
+  </header>
+</div>
+`;
