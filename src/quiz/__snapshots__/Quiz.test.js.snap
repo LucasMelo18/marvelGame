@@ -25,7 +25,7 @@ exports[`Quiz is expected to match the snapshot 1`] = `
         src="thorImage.png"
       />
     </section>
-    <form>
+    <section>
       <div>
         <input
           placeholder="Digite sua resposta"
@@ -33,25 +33,28 @@ exports[`Quiz is expected to match the snapshot 1`] = `
         />
       </div>
       <div>
-        <input
+        <button
           id="answerButton"
-          type="submit"
-          value="Responder"
-        />
+          onClick={[Function]}
+        >
+          Responder
+        </button>
       </div>
       <div
         id="helpButtons"
       >
         <input
+          onClick={[Function]}
           type="submit"
           value="Mostrar resposta"
         />
         <input
+          onClick={[Function]}
           type="submit"
           value="Dica"
         />
       </div>
-    </form>
+    </section>
   </header>
 </div>
 `;
