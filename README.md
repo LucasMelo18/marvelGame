@@ -19,5 +19,8 @@ Run `yarn start` and access http://localhost:3000.
 Run Unit test with:
 * Unit: `yarn test`
 
+## Access the project
+
+To view the visual page access https://lucasmelo18.github.io/marvelGame/.
 
 This project was created with [React App](https://github.com/facebook/create-react-app).
