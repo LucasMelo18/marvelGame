@@ -6,6 +6,7 @@ This is the React application which will work as the client for Marvel Quiz
 
 * NodeJS
 * Yarn
+* React Bootstrap
 
 Given these dependencies in place, run: `yarn install`.
 

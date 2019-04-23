@@ -1,0 +1,55 @@
+.Nav{
+  align-items: center;
+  background-color: #22262a;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+}
+
+.Nav section:nth-child(2){
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 100px;
+}
+
+#mainNav a{
+  color: white;
+  cursor: pointer;
+  font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+
+#mainNav a:hover{
+  text-decoration: underline;
+  text-decoration-color: #ee4326;
+}
+
+.Nav .logoQuiz{
+  width: 100px;
+  height: auto;
+  margin: 0 50px;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .Nav{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 130px;
+  }
+  .Nav section:nth-child(2){
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}

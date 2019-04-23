@@ -27,6 +27,7 @@ class Quiz extends Component {
   toDecrementContador = () =>{
     this.setState({
       contador: this.state.contador -1,
+      show: !this.state.show,
     })
   }
 
@@ -37,6 +38,7 @@ class Quiz extends Component {
   }
 
   render() {
+    const { show, target } = this.state;
     return (
       <div className="mainQuiz">
           <header>
@@ -63,7 +65,15 @@ class Quiz extends Component {
               
               <div id="helpButtons">
                 <input type="submit" value="Mostrar resposta" onClick={this.toClearContador}/>
-                <input type="submit" value="Dica" onClick={this.toDecrementContador}/>
+                
+                <input type="submit" value="Dica" ref={this.attachRef} onClick={this.toDecrementContador}/>
+                <Overlay target={target} show={show} placement="right">
+                  {({ placement, scheduleUpdate, arrowProps, ...props }) => (
+                    <div {...props} style={{ backgroundColor: 'rgb(255, 100, 100)', padding: '2px 10px', color: 'white', borderRadius: 3, ...props.style}}>
+                      Deus nórdico, dos trovões e das batalhas
+                    </div>
+                  )}
+                </Overlay>
               </div>
             </section>
           </header>
